@@ -11,7 +11,7 @@
 :root {
   --primary-color: #37342e;
   --secondary-color: #e3e4da;
-  --accent-color: red;
+  --accent-color: #b7b99e;
 
   /* Status */
   --success: #7bd669;
@@ -22,7 +22,7 @@
     /* Color scheme */
     --primary-color: #e3e4da;
     --secondary-color: #37342e;
-    --accent-color: #b7b99e;
+    --accent-color: #b7b99e;   
 
     /* Status */
     --success: #599c4c;
