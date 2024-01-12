@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Work+Sans:wght@200;300;400;500&display=swap');
 
 
+/*
+  Light
+  https://huemint.com/website-1/#palette=e3e4da-b7b99e-37342e 
+  Dark
+  https://huemint.com/website-1/#palette=37342e-b7b99e-e3e4da
+*/
+
 :root {
   --primary-color: #37342e;
   --secondary-color: #e3e4da;
-
+  
   --success: #7bd669;
 
   --text-color: var(--secondary-color);
