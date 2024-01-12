@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Header, Hero } from '@/components'
+import { Header, Hero, Footer } from '@/components'
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
       <Header/>
       <Hero/>
+      <Footer/>
     </>
   )
 }

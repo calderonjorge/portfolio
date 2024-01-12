@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { Container } from '@/components'
 import { Copy, CopyCheck } from '@/Icons'
 import styles from "./Header.module.scss";
 
@@ -24,7 +25,7 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.navbar}>
+      <Container component='nav' className={styles.navbar}>
         <div>
           <p>Jorge Calderon</p>
           <ul>
@@ -48,7 +49,7 @@ export const Header = () => {
             }
           </button>
         </div>
-      </nav>
+      </Container>
     </header>
   );
 };
