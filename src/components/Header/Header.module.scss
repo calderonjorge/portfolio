@@ -21,6 +21,7 @@
   p {
     font-size: 1.3rem;
     margin-right: 4rem;
+    font-weight: 800;
   }
 
   ul {
@@ -80,5 +81,5 @@
 }
 
 .copyCheck {
-  color: green;
+  color: var(--success);
 }

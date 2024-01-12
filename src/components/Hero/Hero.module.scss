@@ -1,12 +1,11 @@
 .hero {
   text-align: center;
-  text-wrap: pretty;
+  text-wrap: balance;
   max-width: 1280px;
   width: 100%;
   flex-direction: column;
   text-transform: uppercase;
-  margin: 20px auto;
-  // border: solid 1px red;
+  margin: 40px auto;
   h1 {
     font-size: 200px;
     letter-spacing: -8px;

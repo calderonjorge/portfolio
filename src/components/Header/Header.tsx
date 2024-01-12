@@ -7,27 +7,20 @@ export const Header = () => {
   const [hasCopied, setHasCopied] = useState(false)
 
   const handleCopyText = () => {
-    const button = document.querySelector('button'); // Selecciona tu botón específico aquí
+    const button = document.querySelector('button#lets-connect') as HTMLButtonElement
 
     if (button) {
       const buttonText = button.innerText;
-
-      // Crea un elemento de texto temporal
       const tempElement = document.createElement('textarea');
       tempElement.value = buttonText;
-
-      // Añade el elemento al DOM
       document.body.appendChild(tempElement);
-
-      // Selecciona y copia el texto
       tempElement.select();
       document.execCommand('copy');
-
-      // Elimina el elemento temporal
       document.body.removeChild(tempElement);
       setHasCopied(true)
     }
-  };
+  }
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
@@ -38,16 +31,16 @@ export const Header = () => {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" style={{color:"#747c86"}}>About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" style={{color:"#747c86"}}>Contact</a>
             </li>
           </ul>
         </div>
         <div>
           <p>Let&apos;s Connect</p>
-          <button onClick={handleCopyText}>
+          <button onClick={handleCopyText} id='lets-connect'>
             jorgecalderon@gmail.com
             {
               hasCopied ?<CopyCheck className={styles.copyCheck}/> : <Copy/>

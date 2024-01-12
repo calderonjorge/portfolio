@@ -3,8 +3,10 @@
 
 
 :root {
-  --white: #efefef;
-  --black: #121212;
+  --white: #37342e;
+  --black: #e3e4da;
+
+  --success: #7bd669;
 
   --text-color: var(--black);
   --background-color: var(--white);
@@ -18,6 +20,7 @@
     --background-color: var(--black);
     --primary-button-color: var(--black);
     --primary-button-text: var(--white);
+    --success: #599c4c;
   }
 }
 
