@@ -1,0 +1,30 @@
+.hero {
+  text-align: center;
+  text-wrap: pretty;
+  max-width: 1280px;
+  width: 100%;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 20px auto;
+  // border: solid 1px red;
+  h1 {
+    font-size: 200px;
+    letter-spacing: -8px;
+    line-height: 100%;
+    font-family: 'IBM Plex Sans', sans-serif; 
+  }
+}
+
+.currentJob{
+  display: flex;
+  // border: solid 1px red;
+  max-width: 700px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  a {
+    font-weight: 600;
+  }
+}
+
+

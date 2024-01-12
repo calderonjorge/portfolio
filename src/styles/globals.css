@@ -1,15 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Work+Sans:wght@200;300;400;500&display=swap');
+
 
 :root {
-  --text-color: #121212;
-  --background-color: #efefef;
+  --white: #efefef;
+  --black: #121212;
+
+  --text-color: var(--black);
+  --background-color: var(--white);
+  --primary-button-color: var(--white);
+  --primary-button-text: var(--black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: #efefef;
-    --background-color:#121212;
+    --text-color: var(--white);
+    --background-color: var(--black);
+    --primary-button-color: var(--black);
+    --primary-button-text: var(--white);
   }
 }
 
@@ -22,6 +30,8 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 
 a {
