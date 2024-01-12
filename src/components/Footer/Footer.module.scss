@@ -1,9 +1,37 @@
 .footer { 
-  // height: 70px;
   background-color: var(--accent-color);
   padding: 1rem 0;
+
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 0.5rem;
+
+    li {
+      a {
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        svg {
+          margin: 0;
+          padding: 0;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease 0.3s color;
+        }
+
+        &:hover{
+          svg {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+
   }
 }
