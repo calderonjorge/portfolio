@@ -21,8 +21,14 @@
     border-left: 2px solid var(--accent-color);
     
     h3 {
+      font-size: 1.25rem;
       color: var(--accent-color);
       text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    li {
+      margin-bottom: 5px;
     }
     
     &::before {
@@ -38,16 +44,18 @@
     }
   
     &::after {
-      width: 10px;
-      height: 10px;
+      width: 20px;
+      height: 20px;
       display: block;
       top: 1em;
       position: absolute;
-      left: -7px;
-      border-radius: 10px;
-      content: '';
+      left: -13px;
+      border-radius: 20px;
+      content: attr(letter-is);
       border: 2px solid var(--accent-color);
       background: var(--primary-color);
+      color: var(--secondary-color);
+      text-align: center;
     }
   
     &:last-child {

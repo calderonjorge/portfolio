@@ -9,7 +9,8 @@ export const Experience = () => {
       <div className={styles.container}>
         <article
           className={styles["timeline-item"]}
-          date-is="NOV 2021 - PRESENT"
+          date-is="NOV 2021 - TODAY"
+          letter-is="G"
         >
           <h3>Web User Interface Developer PROJECT  – Globant</h3>
           <ul>
@@ -30,7 +31,12 @@ export const Experience = () => {
           </ul>
         </article>
 
-        <article className={styles["timeline-item"]} date-is="MAY 2021 - NOV 2021">
+        <article
+         className={styles["timeline-item"]} 
+         date-is="MAY 2021 - NOV 2021"
+         letter-is="U"
+         color-is="red"
+         >
           <h3>Frontend Developer – UPAX</h3>
           <ul>
             <li>
