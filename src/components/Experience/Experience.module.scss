@@ -25,8 +25,10 @@
       color: var(--accent-color);
       text-transform: uppercase;
       margin-bottom: 5px;
+      font-family: 'IBM Plex Sans', sans-serif; 
     }
 
+    
     li {
       margin-bottom: 5px;
     }
@@ -34,26 +36,27 @@
     &::before {
       content: attr(date-is);
       position: absolute;
-      left: 2em;
+      left: 2rem;
       font-weight: bold;
       top: 1em;
       display: block;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: .785rem;
+      opacity: 0.5;
     }
   
     &::after {
       width: 20px;
       height: 20px;
       display: block;
-      top: 1em;
+      top: 0.5rem;
       position: absolute;
       left: -13px;
       border-radius: 20px;
-      content: attr(color-is);
+      content: attr(letter-is);
       border: 2px solid var(--accent-color);
-      background-color: white;
+      background-color: var(--accent-color);
       color: var(--secondary-color);
       text-align: center;
     }
