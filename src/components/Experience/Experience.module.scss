@@ -51,9 +51,9 @@
       position: absolute;
       left: -13px;
       border-radius: 20px;
-      content: attr(letter-is);
+      content: attr(color-is);
       border: 2px solid var(--accent-color);
-      background: var(--primary-color);
+      background-color: white;
       color: var(--secondary-color);
       text-align: center;
     }

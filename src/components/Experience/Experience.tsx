@@ -11,6 +11,7 @@ export const Experience = () => {
           className={styles["timeline-item"]}
           date-is="NOV 2021 - TODAY"
           letter-is="G"
+          color-is="red"
         >
           <h3>Web User Interface Developer PROJECT  – Globant</h3>
           <ul>
@@ -51,7 +52,11 @@ export const Experience = () => {
           </ul>
         </article>
 
-        <article className={styles["timeline-item"]} date-is="20-07-1990">
+        <article 
+        className={styles["timeline-item"]} 
+        date-is="20-07-1990"
+        letter-is="I"
+        >
           <h3>I&apos;m ::last-child so my border fades ^__^</h3>
           <p>
             I&apos;m speaking with myself, number one, because I have a very
