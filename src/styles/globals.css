@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Work+Sans:wght@200;300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Work+Sans:wght@200;300;400;500&display=swap");
 
 /*
   Light
@@ -12,21 +11,20 @@
 :root {
   --primary-color: #37342e;
   --secondary-color: #e3e4da;
-  
-  --success: #7bd669;
+  --accent-color: red;
 
-  --text-color: var(--secondary-color);
-  --background-color: var(--primary-color);
-  --primary-button-color: var(--primary-color);
-  --primary-button-text: var(--secondary-color);
+  /* Status */
+  --success: #7bd669;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: var(--primary-color);
-    --background-color: var(--secondary-color);
-    --primary-button-color: var(--secondary-color);
-    --primary-button-text: var(--primary-color);
+    /* Color scheme */
+    --primary-color: #e3e4da;
+    --secondary-color: #37342e;
+    --accent-color: #b7b99e;
+
+    /* Status */
     --success: #599c4c;
   }
 }
@@ -38,10 +36,10 @@
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   /* font-family: 'IBM Plex Sans', sans-serif; */
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {

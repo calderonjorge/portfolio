@@ -1,4 +1,5 @@
 
+import Link from 'next/link';
 import { useState } from 'react';
 import { Copy, CopyCheck } from '@/Icons'
 import styles from "./Header.module.scss";
@@ -28,13 +29,13 @@ export const Header = () => {
           <p>Jorge Calderon</p>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link href="#home">Home</Link>
             </li>
             <li>
-              <a href="#about" style={{color:"#747c86"}}>About</a>
+              <Link href="#about">About</Link>
             </li>
             <li>
-              <a href="#contact" style={{color:"#747c86"}}>Contact</a>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
         </div>
