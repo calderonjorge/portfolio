@@ -5,4 +5,59 @@
     font-size: 2rem;
     font-family: 'IBM Plex Sans', sans-serif; 
   }
+  
+
+  .container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 40px auto 40px;
+  }
+  
+  .timeline-item {
+
+    text-wrap: balance;
+    padding: 3em 2em 2em;
+    position: relative;
+    border-left: 2px solid var(--accent-color);
+    
+    h3 {
+      color: var(--accent-color);
+      text-transform: uppercase;
+    }
+    
+    &::before {
+      content: attr(date-is);
+      position: absolute;
+      left: 2em;
+      font-weight: bold;
+      top: 1em;
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: .785rem;
+    }
+  
+    &::after {
+      width: 10px;
+      height: 10px;
+      display: block;
+      top: 1em;
+      position: absolute;
+      left: -7px;
+      border-radius: 10px;
+      content: '';
+      border: 2px solid var(--accent-color);
+      background: var(--primary-color);
+    }
+  
+    &:last-child {
+      border-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 20%,
+        rgba(transparent, 0)) 1 100%
+      ;
+    }
+  }
+  
 }
+
