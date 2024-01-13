@@ -8,7 +8,7 @@ export const Hero = () => {
       <h1>Senior <br />web developer</h1>
       <div className={styles.currentJob}>
         <p>Creating amazing user interfaces at <Link href="https://www.globant.com/" target='_blank' rel='no-referer'>@Globant</Link></p>
-        <p>(Oct 2021 - Present)</p>
+        <p>Oct 2021 - Present</p>
       </div>
     </section>
   )
