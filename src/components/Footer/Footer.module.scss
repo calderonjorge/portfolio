@@ -1,11 +1,11 @@
 .footer { 
-  background-color: var(--accent-color);
   padding: 1rem 0;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   ul {
@@ -27,7 +27,7 @@
 
         &:hover{
           svg {
-            color: var(--secondary-color);
+            color: var(--accent-color);
           }
         }
       }
