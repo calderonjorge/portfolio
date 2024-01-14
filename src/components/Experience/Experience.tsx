@@ -1,5 +1,6 @@
 import { Container } from "@/components";
 import styles from "./Experience.module.scss";
+import Link from 'next/link';
 
 export const Experience = () => {
   return (
@@ -12,7 +13,7 @@ export const Experience = () => {
           date-is="NOV 2021 - TODAY"
           letter-is="G"
         >
-          <h3>Web User Interface Developer PROJECT – Globant</h3>
+          <h3 style={{ color: '#C1D838' }}>Web User Interface Developer PROJECT – <Link target="_blank" rel="no-" href="https://www.globant.com/about">Globant</Link></h3>
           <ul>
             <li>
               • Created a frontend project with Next JS, Typescript, Docker,
@@ -36,7 +37,7 @@ export const Experience = () => {
           date-is="MAY 2021 - NOV 2021"
           letter-is="U"
         >
-          <h3>Frontend Developer – UPAX</h3>
+          <h3 style={{ color: "#DF692E" }}>Frontend Developer – <Link target="_blank" rel="no-" href="https://upax.com.mx/quienes-somos">UPAX</Link></h3>
           <ul>
             <li>
               • Developed multiple websites implemented throughout Mexico using
@@ -60,7 +61,7 @@ export const Experience = () => {
           date-is="MAY 2019 - AUG 2021"
           letter-is="I"
         >
-          <h3>Web Developer – Instituto Mexicano de Tecnología del Agua</h3>
+          <h3 style={{ color: "#1478BF" }}>Web Developer – <Link target="_blank" rel="no-" href="https://www.gob.mx/imta/que-hacemos">Instituto Mexicano de Tecnología del Agua</Link></h3>
           <ul>
             <li>
               • Full-stack developer, under SISUAR project. SISUAR is a
