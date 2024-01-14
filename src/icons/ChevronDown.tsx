@@ -1,5 +1,8 @@
+interface Props {
+  className?: string;
+}
 
-export const Instagram = () => {
+export const ChevronDown = ({ className }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,13 +12,14 @@ export const Instagram = () => {
       strokeWidth="1.5"
       stroke="currentColor"
       fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-      <path d="M16.5 7.5l0 .01" />
+      <path d="M6 9l6 6l6 -6" />
     </svg>
-  );
-};
+  )
+}

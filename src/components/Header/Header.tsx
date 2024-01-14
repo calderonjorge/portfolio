@@ -1,7 +1,6 @@
 
-import Link from 'next/link';
 import { useState } from 'react';
-import { Container } from '@/components'
+import { Container, Link } from '@/components'
 // import { Copy, CopyCheck } from '@/icons'
 import styles from "./Header.module.scss";
 

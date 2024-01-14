@@ -1,0 +1,35 @@
+.language {
+  position: relative;
+}
+
+.languageSelect {
+  appearance      : none;
+  cursor          : pointer;
+  height          : 2.4rem;
+  width       : 12rem;
+  border-radius   : 0.2rem;
+  padding-inline  : 2.4rem;
+  outline         : none;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.languageIcon {
+  position   : absolute;
+  height     : 100%;
+  top        : 0;
+  font-size  : 0.9rem;
+  display    : flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.globe {
+  position: absolute;
+  left    : 1rem;
+}
+
+.chevron {
+  position: absolute;
+  left    : 10rem;
+}
