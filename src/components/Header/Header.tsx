@@ -40,13 +40,12 @@ export const Header = () => {
           </ul>
         </div>
         <div>
-          <button onClick={handleCopyText} id='lets-connect'>
+          <button className={styles.button}>
             Let&apos;s Connect
-            {/* hi@jorgecalderon.dev
-            {
-              hasCopied ? <CopyCheck className={styles.copyCheck}/> : <Copy/>
-            } */}
-          </button>
+            <div className={styles.hoverEffect}>
+              <div>
+              </div>
+            </div></button>
         </div>
       </Container>
     </header>

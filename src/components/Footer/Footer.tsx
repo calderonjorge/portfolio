@@ -31,7 +31,7 @@ export const Footer = () => {
           <li><Link href="#">Experience</Link></li>
           <li><Link href="#">Contact</Link></li>
         </ul>
-        <p className={styles.copyright}>Copyright © {new Date().getFullYear()} All Rights Reserved by jorgecalderon.dev</p>
+        <p>Copyright © {new Date().getFullYear()} All Rights Reserved by jorgecalderon.dev</p>
         <LanguagePicker />        
       </Container>
     </footer>
