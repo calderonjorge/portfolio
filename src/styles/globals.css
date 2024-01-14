@@ -22,13 +22,13 @@
     /* Color scheme */
     --primary-color: #999999;
     --secondary-color: #0F141B;
-    --accent-color: #ffc42e;
+    --accent-color: #58c0c6;
 
     /* Status */
     --success: #599c4c;
 
     /* UTILS */
-    --gray: #696B6F;
+    --gray: #252525;
   }
 }
 
@@ -42,6 +42,7 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   font-family: "Inter", sans-serif;
+  font-size: 16px;
 }
 
 a {

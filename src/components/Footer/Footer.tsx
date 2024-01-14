@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container className={styles.container}>
-        <p>Copyright © {new Date().getFullYear()} All Rights Reserved by Scanfcode.</p>
+        <p>Copyright © {new Date().getFullYear()} All Rights Reserved by Me.</p>
         <ul>
           <li>
             <SocialIcon href="" title="Take a look to my Github profile" hoverColor="#089AD4">

@@ -29,7 +29,7 @@ export const Experience = () => {
       date: 'MAY 2021 - NOV 2021',
       company: 'UPAX',
       companyLink: 'https://upax.com.mx/quienes-somos',
-      dotTextColor: '#000',
+      dotTextColor: '#fff',
       title: 'Frontend Developer',
       titleColor: '#DF692E',
       activities: [
@@ -50,7 +50,7 @@ export const Experience = () => {
       date: 'MAY 2019 - AUG 2021',
       company: 'Instituto Mexicano de Tecnología del Agua',
       companyLink: 'https://www.gob.mx/imta/que-hacemos',
-      dotTextColor: '#000',
+      dotTextColor: '#fff',
       title: 'Fullstack Developer',
       titleColor: '#1478BF',
       activities: [

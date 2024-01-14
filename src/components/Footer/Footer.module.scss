@@ -1,11 +1,13 @@
 .footer { 
   padding: 1rem 0;
+  font-size: 0.9rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-top: solid 1px var(--gray);
+    padding-top: 0.5rem;
   }
 
   ul {
