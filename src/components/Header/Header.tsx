@@ -45,7 +45,7 @@ export const Header = () => {
           <button onClick={handleCopyText} id='lets-connect'>
             hi@jorgecalderon.dev
             {
-              hasCopied ?<CopyCheck className={styles.copyCheck}/> : <Copy/>
+              hasCopied ? <CopyCheck className={styles.copyCheck}/> : <Copy/>
             }
           </button>
         </div>
