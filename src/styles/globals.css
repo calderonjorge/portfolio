@@ -20,9 +20,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Color scheme */
-    --primary-color: #c2c2c2;
+    --primary-color: #999999;
     --secondary-color: #0F141B;
-    --accent-color: #58c0c6;
+    --accent-color: #ffc42e;
 
     /* Status */
     --success: #599c4c;

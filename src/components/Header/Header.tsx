@@ -41,12 +41,12 @@ export const Header = () => {
           </ul>
         </div>
         <div>
-          <p>Let&apos;s Connect</p>
           <button onClick={handleCopyText} id='lets-connect'>
-            hi@jorgecalderon.dev
+            Let&apos;s Connect
+            {/* hi@jorgecalderon.dev
             {
               hasCopied ? <CopyCheck className={styles.copyCheck}/> : <Copy/>
-            }
+            } */}
           </button>
         </div>
       </Container>

@@ -11,27 +11,5 @@
   ul {
     display: flex;
     gap: 0.5rem;
-
-    li {
-      a {
-        height: 1rem;
-        display: flex;
-        align-items: center;
-        svg {
-          margin: 0;
-          padding: 0;
-          height: 1.5rem;
-          width: 1.5rem;
-          transition: ease 0.3s color;
-        }
-
-        &:hover{
-          svg {
-            color: var(--accent-color);
-          }
-        }
-      }
-    }
-
   }
 }

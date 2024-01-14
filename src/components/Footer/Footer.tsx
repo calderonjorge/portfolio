@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Container } from "@/components";
+import { Container, SocialIcon } from "@/components";
 import { LinkedIn, Instagram, Github } from "@/icons";
 import styles from "./Footer.module.scss";
 
@@ -7,22 +7,24 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container className={styles.container}>
-        <p> © {new Date().getFullYear()}, All rights reserved.</p>
+        <p>Copyright © {new Date().getFullYear()} All Rights Reserved by Scanfcode.</p>
         <ul>
           <li>
-            <Link href="" title="Take a look to my LinkedIn profile">
+            <SocialIcon href="" title="Take a look to my Github profile" hoverColor="#089AD4">
               <LinkedIn />
-            </Link>
+            </SocialIcon>
           </li>
+
           <li>
-            <Link href="" title="Take a look to my Instagram">
+            <SocialIcon href="" title="Take a look to my Github profile" hoverColor="#F52755">
               <Instagram />
-            </Link>
+            </SocialIcon>
           </li>
+
           <li>
-            <Link href="" title="Take a look to my Github profile">
+            <SocialIcon href="" title="Take a look to my Github profile" hoverColor="#7A6BFA">
               <Github />
-            </Link>
+            </SocialIcon>
           </li>
         </ul>
       </Container>
