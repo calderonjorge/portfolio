@@ -22,10 +22,13 @@
     /* Color scheme */
     --primary-color: #c2c2c2;
     --secondary-color: #0F141B;
-    --accent-color: #55a1a5;
+    --accent-color: #58c0c6;
 
     /* Status */
     --success: #599c4c;
+
+    /* UTILS */
+    --gray: #696B6F;
   }
 }
 

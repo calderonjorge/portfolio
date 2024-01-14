@@ -43,7 +43,7 @@ export const Header = () => {
         <div>
           <p>Let&apos;s Connect</p>
           <button onClick={handleCopyText} id='lets-connect'>
-            jorgecalderon@gmail.com
+            hi@jorgecalderon.dev
             {
               hasCopied ?<CopyCheck className={styles.copyCheck}/> : <Copy/>
             }
