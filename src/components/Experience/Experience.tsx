@@ -12,6 +12,7 @@ export const Experience = () => {
           className={styles["timeline-item"]}
           date-is="NOV 2021 - TODAY"
           letter-is="G"
+          // @ts-ignore
           style={{ "--bg-color-is": "#C1D838", "--text-color-is": "#000" }}
         >
           <h3 style={{ color: '#C1D838' }}>Web User Interface Developer PROJECT – <Link target="_blank"  rel="noreferrer" href="https://www.globant.com/about">Globant</Link></h3>
@@ -37,6 +38,7 @@ export const Experience = () => {
           className={styles["timeline-item"]}
           date-is="MAY 2021 - NOV 2021"
           letter-is="U"
+          // @ts-ignore
           style={{ "--bg-color-is": "#DF692E", "--text-color-is":"#fff" }}
         >
           <h3 style={{ color: "#DF692E" }}>Frontend Developer – <Link target="_blank"   rel="noreferrer" href="https://upax.com.mx/quienes-somos">UPAX</Link></h3>
@@ -62,6 +64,7 @@ export const Experience = () => {
           className={styles["timeline-item"]}
           date-is="MAY 2019 - AUG 2021"
           letter-is="I"
+          // @ts-ignore
           style={{ "--bg-color-is": "#1478BF", "--text-color-is": "#fff" }}
         >
           <h3 style={{ color: "#1478BF" }}>Web Developer – <Link target="_blank" rel="noreferrer" href="https://www.gob.mx/imta/que-hacemos">Instituto Mexicano de Tecnología del Agua</Link></h3>
