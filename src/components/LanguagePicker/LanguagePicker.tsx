@@ -1,7 +1,6 @@
 import { Globe, ChevronDown } from '@/icons'
+import { Locale, useLocale, useTranslate } from '@/hooks'
 import styles from './LanguagePicker.module.scss'
-import { Locale, useLocale } from '@/hooks'
-import { useTranslate } from '@/hooks/useTranslate'
 
 export const LanguagePicker = () => {
   const { switchLocale, locale } = useLocale()

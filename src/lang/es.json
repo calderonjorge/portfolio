@@ -1,12 +1,25 @@
 {
   "app": {
-    "title": "Mi Portafolio",
+    "title": "Jorge Calderon | Portafolio",
+    "description":"Mi portafolio, soy un desarrollador web",
     "locale_switcher": {
       "en": "Inglés",
       "es": "Español"
     }
   },
+  "header":{
+    "links" : {
+      "home": "Inicio", 
+      "about": "Sobre mí", 
+      "experience": "Experiencia", 
+      "get_in_touch": "Contáctame"
+    }
+  },
   "main": {
-    "description": "Esta interfaz utiliza firma indexada y utilidad de tipo recursivo en TS. // Simplemente significa que nuestro json podría tener una clave y un valor de tipo cadena o json anidado."
+    "description": "// This interface is using Indexed signature and Recursive type utility in TS. // It just means our json might have key and value of type string or nested json."
+  },
+  "footer": {
+    "follow_me": "Puedes seguirme en",
+    "copyright": "Copyright © 2024 Todos los derechos reservados."
   }
 }

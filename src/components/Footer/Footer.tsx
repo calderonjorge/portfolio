@@ -1,17 +1,16 @@
-import { useRouter } from 'next/router'
 import { Link } from '@/components'
 import { Container, SocialIcon, LanguagePicker } from '@/components'
 import { LinkedIn, Instagram, Github } from '@/icons'
-
 import styles from './Footer.module.scss'
+import { useTranslate } from '@/hooks'
 
 export const Footer = () => {
-  const { locale, locales, defaultLocale, asPath } = useRouter()
+  const { t } = useTranslate()
 
   return (
     <footer className={styles.footer}>
       <Container className={styles.container}>
-        <p className={styles.followMe}>Follow me</p>
+        <p className={styles.followMe}>{t('footer.follow_me')}</p>
         <ul>
           <li>
             <SocialIcon href="" title="Take a look to my Github profile" hoverColor="#089AD4">
@@ -32,13 +31,13 @@ export const Footer = () => {
         </ul>
         <ul>
           <li>
-            <Link href="#">Home</Link>
+            <Link href="#">{t('header.links.home')}</Link>
           </li>
           <li>
-            <Link href="#">Experience</Link>
+            <Link href="#">{t('header.links.about')}</Link>
           </li>
           <li>
-            <Link href="#">Contact</Link>
+            <Link href="#">{t('header.links.experience')}</Link>
           </li>
         </ul>
         <p>Copyright © {new Date().getFullYear()} All Rights Reserved by jorgecalderon.dev</p>

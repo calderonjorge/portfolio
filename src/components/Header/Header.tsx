@@ -1,24 +1,9 @@
-import { useState } from 'react'
 import { Container, Link, AwesomeLink } from '@/components'
+import { useTranslate } from '@/hooks'
 import styles from './Header.module.scss'
 
 export const Header = () => {
-  const [hasCopied, setHasCopied] = useState(false)
-
-  const handleCopyText = () => {
-    const button = document.querySelector('button#lets-connect') as HTMLButtonElement
-
-    if (button) {
-      const buttonText = button.innerText
-      const tempElement = document.createElement('textarea')
-      tempElement.value = buttonText
-      document.body.appendChild(tempElement)
-      tempElement.select()
-      document.execCommand('copy')
-      document.body.removeChild(tempElement)
-      setHasCopied(true)
-    }
-  }
+  const { t } = useTranslate()
 
   return (
     <header className={styles.header}>
@@ -29,17 +14,17 @@ export const Header = () => {
         <div>
           <ul>
             <li>
-              <Link href="#home">Home</Link>
+              <Link href="#">{t('header.links.home')}</Link>
             </li>
             <li>
-              <Link href="#about">About</Link>
+              <Link href="#">{t('header.links.about')}</Link>
             </li>
             <li>
-              <Link href="#contact">Experience</Link>
+              <Link href="#">{t('header.links.experience')}</Link>
             </li>
           </ul>
 
-          <AwesomeLink href="#contact">Let&apos;s Connect</AwesomeLink>
+          <AwesomeLink href="#contact">{t('header.links.get_in_touch')}</AwesomeLink>
         </div>
       </Container>
     </header>

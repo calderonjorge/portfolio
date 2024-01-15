@@ -1,12 +1,25 @@
 {
   "app": {
-    "title": "My portfolio",
+    "title": "Jorge Calderon | Portfolio",
+    "description":"My portfolio I'm a web developer",
     "locale_switcher": {
       "en": "English",
       "es": "Spanish"
     }
   },
+  "header":{
+    "links" : {
+      "home": "Home", 
+      "about": "About", 
+      "experience": "Experience",
+      "get_in_touch": "Let's Connect"
+    }
+  },
   "main": {
     "description": "// This interface is using Indexed signature and Recursive type utility in TS. // It just means our json might have key and value of type string or nested json."
+  },
+  "footer": {
+    "follow_me": "You can follow me on",
+    "copyright": "Copyright © 2024 All Rights Reserved."
   }
 }
