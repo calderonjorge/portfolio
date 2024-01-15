@@ -27,8 +27,12 @@
       }
     }
   },
-  "hero":{
-    "id":"inicio"
+  "hero": {
+    "id": "inicio", 
+    "job_title":"Desarrollador web",
+    "current_job": "Creando increíbles interfaces de usuario en", 
+    "current_company_name": "Globant", 
+    "current_company_href": "https://www.globant.com/es"
   },
   "experience": {
     "id": "experiencia"
