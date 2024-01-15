@@ -1,3 +1,4 @@
+export { AwesomeLink } from './AwesomeLink/AwesomeLink'
 export { Container } from './Container/Container'
 export { Experience } from './Experience/Experience'
 export { Footer } from './Footer/Footer'

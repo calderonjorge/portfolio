@@ -1,0 +1,75 @@
+.link {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: scale 0.3s;
+  display: flex;
+  gap: 0.3rem;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+
+  animation: changeColor linear both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+
+  position: relative;
+  overflow: hidden;
+  transition: all 0.02s;
+  z-index: 0;
+}
+
+.link:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoverEffect div {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.link:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  to {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+}

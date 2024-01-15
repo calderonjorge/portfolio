@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Container, Link } from "@/components";
-// import { Copy, CopyCheck } from '@/icons'
+import { Container, Link, AwesomeLink } from "@/components";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
@@ -38,16 +37,11 @@ export const Header = () => {
               <Link href="#about">About</Link>
             </li>
             <li>
-              <Link href="#contact">Contact</Link>
+              <Link href="#contact">Experience</Link>
             </li>
           </ul>
 
-          <a className={styles.link} href="#">
-            Let&apos;s Connect
-            <div className={styles.hoverEffect}>
-              <div></div>
-            </div>
-          </a>
+          <AwesomeLink href="#contact">Let&apos;s Connect</AwesomeLink>
         </div>
       </Container>
     </header>
