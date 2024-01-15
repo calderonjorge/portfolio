@@ -4,7 +4,7 @@ import styles from './LanguagePicker.module.scss'
 export const LanguagePicker = () => {
   return (
     <div className={styles.language}>
-      <select className={styles.languageSelect} onChange={() => { console.log('changed') }}>
+      <select className={styles.languageSelect} onChange={() => { console.error('changed') }}>
         <option value="en" selected>English</option>
         <option value="es">Spanish</option>
       </select>

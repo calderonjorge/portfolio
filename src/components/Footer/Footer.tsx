@@ -1,7 +1,7 @@
-import { Link } from "@/components";
-import { Container, SocialIcon, LanguagePicker } from "@/components";
-import { LinkedIn, Instagram, Github } from "@/icons";
-import styles from "./Footer.module.scss";
+import { Link } from '@/components'
+import { Container, SocialIcon, LanguagePicker } from '@/components'
+import { LinkedIn, Instagram, Github } from '@/icons'
+import styles from './Footer.module.scss'
 
 export const Footer = () => {
   return (
@@ -35,5 +35,5 @@ export const Footer = () => {
         <LanguagePicker />        
       </Container>
     </footer>
-  );
-};
+  )
+}

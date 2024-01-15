@@ -15,11 +15,11 @@ export interface Props {
 export const TimelineItem: FC<Props> = (props) => {
   return (
     <article
-      className={styles["timeline-item"]}
+      className={styles['timeline-item']}
       date-is={props.date}
       letter-is={props.company.charAt(0)}
       // @ts-ignore
-      style={{ "--bg-color-is": props.titleColor, "--text-color-is": props.dotTextColor }}
+      style={{ '--bg-color-is': props.titleColor, '--text-color-is': props.dotTextColor }}
     >
       <h3 style={{ color: props.titleColor }}>{props.title} – <Link target="_blank" rel="noreferrer" href={props.companyLink}>{props.company}</Link></h3>
       <ul>

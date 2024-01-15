@@ -1,5 +1,5 @@
-import { Container, Timeline, TimelineITemProps } from "@/components";
-import styles from "./Experience.module.scss";
+import { Container, Timeline, TimelineITemProps } from '@/components'
+import styles from './Experience.module.scss'
 
 export const Experience = () => {
 
@@ -70,5 +70,5 @@ export const Experience = () => {
       <h2>Relevant experience</h2>
       <Timeline items={items}/>
     </Container>
-  );
-};
+  )
+}

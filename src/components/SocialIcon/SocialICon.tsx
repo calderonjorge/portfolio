@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren } from "react"
-import Link from "next/link"
+import { FC, PropsWithChildren } from 'react'
+import Link from 'next/link'
 import styles from './SocialIcon.module.scss'
 
 interface Props {
@@ -15,7 +15,7 @@ export const SocialIcon: FC<PropsWithChildren<Props>> = ({ children, hoverColor,
       title={title}
       className={styles.socialIcon}
       // @ts-ignore
-      style={{ "--hover-color-is": hoverColor }}
+      style={{ '--hover-color-is': hoverColor }}
     >
       {
         children

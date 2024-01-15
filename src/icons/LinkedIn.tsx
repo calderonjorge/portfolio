@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const LinkedIn = () => {
   return (
@@ -20,5 +20,5 @@ export const LinkedIn = () => {
       <path d="M12 16l0 -5" />
       <path d="M16 16v-3a2 2 0 0 0 -4 0" />
     </svg>
-  );
-};
+  )
+}
