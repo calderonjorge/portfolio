@@ -47,22 +47,6 @@
     gap: 1rem;
   }
 
-  button {
-    text-transform: uppercase;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    transition: scale 0.3s;
-    display: flex;
-    gap: 0.3rem;
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-
-    animation: changeColor linear both;
-    animation-timeline: scroll();
-    animation-range: 0 200px;
-  }
 }
 
 @keyframes blur {
@@ -75,23 +59,29 @@
   }
 }
 
-@keyframes changeColor {
-  to {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-}
+.link {
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: scale 0.3s;
+  display: flex;
+  gap: 0.3rem;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 
-.button {
+  animation: changeColor linear both;
+  animation-timeline: scroll();
+  animation-range: 0 200px;
+
   position: relative;
   overflow: hidden;
   transition: all 0.02s;
   z-index: 0;
-  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
-  color: white;
 }
 
-.button:active {
+.link:active {
   transform: scale(0.97);
 }
 
@@ -123,7 +113,7 @@
   z-index: -1;
 }
 
-.button:hover .hoverEffect div {
+.link:hover .hoverEffect div {
   width: 8rem;
   height: 8rem;
 }
@@ -135,5 +125,12 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  to {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
 }

@@ -42,12 +42,12 @@ export const Header = () => {
             </li>
           </ul>
 
-          <button className={styles.button}>
+          <a className={styles.link} href="#">
             Let&apos;s Connect
             <div className={styles.hoverEffect}>
               <div></div>
             </div>
-          </button>
+          </a>
         </div>
       </Container>
     </header>
