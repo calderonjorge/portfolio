@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import styles from './Hero.module.scss'
+import { useTranslate } from '@/hooks'
 
 export const Hero = () => {
+  const { t } = useTranslate()
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id={t('hero.id')}>
       <h1>
         Senior <br />
         web developer

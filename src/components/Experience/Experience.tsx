@@ -1,7 +1,9 @@
 import { Container, Timeline, TimelineITemProps } from '@/components'
 import styles from './Experience.module.scss'
+import { useTranslate } from '@/hooks'
 
 export const Experience = () => {
+  const { t } = useTranslate()
   const items: TimelineITemProps[] = [
     {
       date: 'NOV 2021 - TODAY',
@@ -59,7 +61,7 @@ export const Experience = () => {
     },
   ]
   return (
-    <Container component="section" className={styles.experience}>
+    <Container id={t('experience.id')} component="section" className={styles.experience}>
       <h2>Relevant experience</h2>
       <Timeline items={items} />
     </Container>

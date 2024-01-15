@@ -31,13 +31,13 @@ export const Footer = () => {
         </ul>
         <ul>
           <li>
-            <Link href="#">{t('header.links.home')}</Link>
+            <Link href={t('header.links.home.href')}>{t('header.links.home.value')}</Link>
           </li>
           <li>
-            <Link href="#">{t('header.links.about')}</Link>
+            <Link href={t('header.links.about.href')}>{t('header.links.about.value')}</Link>
           </li>
           <li>
-            <Link href="#">{t('header.links.experience')}</Link>
+            <Link href={t('header.links.experience.href')}>{t('header.links.experience.value')}</Link>
           </li>
         </ul>
         <p>Copyright © {new Date().getFullYear()} All Rights Reserved by jorgecalderon.dev</p>

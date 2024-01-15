@@ -8,15 +8,30 @@
     }
   },
   "header":{
-    "links" : {
-      "home": "Inicio", 
-      "about": "Sobre mí", 
-      "experience": "Experiencia", 
-      "get_in_touch": "Contáctame"
+    "links" :{
+      "home": {
+        "href": "#inicio",
+        "value": "Inicio"
+      },
+      "about": {
+        "href": "#sobre-mi",
+        "value": "Sobre mí"
+      },
+      "experience": {
+        "href": "#experiencia",
+        "value": "Experiencia"
+      },
+      "get_in_touch": {
+        "href": "#contactame",
+        "value": "Contáctame"
+      }
     }
   },
-  "main": {
-    "description": "// This interface is using Indexed signature and Recursive type utility in TS. // It just means our json might have key and value of type string or nested json."
+  "hero":{
+    "id":"inicio"
+  },
+  "experience": {
+    "id": "experiencia"
   },
   "footer": {
     "follow_me": "Puedes seguirme en",

@@ -38,6 +38,11 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: 75px;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);

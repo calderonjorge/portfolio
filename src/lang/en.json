@@ -1,22 +1,37 @@
 {
   "app": {
     "title": "Jorge Calderon | Portfolio",
-    "description":"My portfolio I'm a web developer",
+    "description": "My portfolio I'm a web developer",
     "locale_switcher": {
       "en": "English",
       "es": "Spanish"
     }
   },
-  "header":{
-    "links" : {
-      "home": "Home", 
-      "about": "About", 
-      "experience": "Experience",
-      "get_in_touch": "Let's Connect"
+  "header": {
+    "links": {
+      "home": {
+        "href": "#home",
+        "value": "Home"
+      },
+      "about": {
+        "href": "#about",
+        "value": "About"
+      },
+      "experience": {
+        "href": "#experience",
+        "value": "Experience"
+      },
+      "get_in_touch": {
+        "href": "#get-in-touch",
+        "value": "Let's Connect"
+      }
     }
   },
-  "main": {
-    "description": "// This interface is using Indexed signature and Recursive type utility in TS. // It just means our json might have key and value of type string or nested json."
+  "hero": {
+    "id": "home"
+  },
+  "experience": {
+    "id": "experience"
   },
   "footer": {
     "follow_me": "You can follow me on",

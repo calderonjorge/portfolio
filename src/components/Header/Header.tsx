@@ -14,17 +14,19 @@ export const Header = () => {
         <div>
           <ul>
             <li>
-              <Link href="#">{t('header.links.home')}</Link>
+              <Link href={t('header.links.home.href')}>{t('header.links.home.value')}</Link>
             </li>
             <li>
-              <Link href="#">{t('header.links.about')}</Link>
+              <Link href={t('header.links.about.href')}>{t('header.links.about.value')}</Link>
             </li>
             <li>
-              <Link href="#">{t('header.links.experience')}</Link>
+              <Link href={t('header.links.experience.href')}>{t('header.links.experience.value')}</Link>
             </li>
           </ul>
 
-          <AwesomeLink href="#contact">{t('header.links.get_in_touch')}</AwesomeLink>
+          <AwesomeLink href={t('header.links.get_in_touch.href')}>
+            {t('header.links.get_in_touch.value')}
+          </AwesomeLink>
         </div>
       </Container>
     </header>

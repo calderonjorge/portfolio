@@ -11,6 +11,7 @@ export const LanguagePicker = () => {
       <select
         className={styles.languageSelect}
         onChange={e => {
+          // TODO: implement i18n with hash
           switchLocale(e.target.value as Locale)
         }}
         defaultValue={locale}
