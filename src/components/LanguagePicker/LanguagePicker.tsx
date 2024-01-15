@@ -11,9 +11,7 @@ export const LanguagePicker = () => {
         }}
         defaultValue={'en'}
       >
-        <option value="en" selected>
-          English
-        </option>
+        <option value="en">English</option>
         <option value="es">Spanish</option>
       </select>
       <div className={styles.languageIcon}>
