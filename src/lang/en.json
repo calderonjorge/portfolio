@@ -32,7 +32,8 @@
     "job_title":"Web developer",
     "current_job": "Creating amazing user interfaces at", 
     "current_company_name": "Globant", 
-    "current_company_href": "https://www.globant.com/"
+    "current_company_href": "https://www.globant.com/", 
+    "current_date_job":"Oct 2021 - Today"
   },
   "experience": {
     "id": "experience"

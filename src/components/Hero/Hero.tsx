@@ -14,7 +14,7 @@ export const Hero = () => {
             @{t('hero.current_company_name')}
           </Link>
         </p>
-        <p>Oct 2021 - Present</p>
+        <p>{t('hero.current_date_job')}</p>
       </div>
     </section>
   )
