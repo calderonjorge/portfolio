@@ -20,7 +20,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Color scheme */
-    --primary-color: #999999;
+    --primary-color: #cacaca;
     --secondary-color: #0F141B;
     --accent-color: #58c0c6;
 
@@ -28,7 +28,7 @@
     --success: #599c4c;
 
     /* UTILS */
-    --gray: #252525;
+    --gray: #2e2e2e;
   }
 }
 
