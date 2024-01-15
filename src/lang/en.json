@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "My portfolio",
+    "locale_switcher": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "main": {
+    "description": "// This interface is using Indexed signature and Recursive type utility in TS. // It just means our json might have key and value of type string or nested json."
+  }
+}

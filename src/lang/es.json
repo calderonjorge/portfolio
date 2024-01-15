@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Mi Portafolio",
+    "locale_switcher": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "main": {
+    "description": "Esta interfaz utiliza firma indexada y utilidad de tipo recursivo en TS. // Simplemente significa que nuestro json podría tener una clave y un valor de tipo cadena o json anidado."
+  }
+}

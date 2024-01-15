@@ -1,9 +1,13 @@
+import { useRouter } from 'next/router'
 import { Link } from '@/components'
 import { Container, SocialIcon, LanguagePicker } from '@/components'
 import { LinkedIn, Instagram, Github } from '@/icons'
+
 import styles from './Footer.module.scss'
 
 export const Footer = () => {
+  const { locale, locales, defaultLocale, asPath } = useRouter()
+
   return (
     <footer className={styles.footer}>
       <Container className={styles.container}>
