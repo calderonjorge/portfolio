@@ -5,10 +5,7 @@ interface Props {
   href?: string;
 }
 
-export const AwesomeLink: FC<PropsWithChildren<Props>> = ({
-  children,
-  href,
-}) => {
+export const AwesomeLink: FC<PropsWithChildren<Props>> = ({ children, href }) => {
   return (
     <a className={styles.link} href={href}>
       {children}

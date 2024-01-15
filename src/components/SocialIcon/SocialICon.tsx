@@ -5,7 +5,7 @@ import styles from './SocialIcon.module.scss'
 interface Props {
   hoverColor?: string;
   title?: string;
-  href: string
+  href: string;
 }
 
 export const SocialIcon: FC<PropsWithChildren<Props>> = ({ children, hoverColor, title, href }) => {
@@ -17,9 +17,7 @@ export const SocialIcon: FC<PropsWithChildren<Props>> = ({ children, hoverColor,
       // @ts-ignore
       style={{ '--hover-color-is': hoverColor }}
     >
-      {
-        children
-      }
+      {children}
     </Link>
   )
 }

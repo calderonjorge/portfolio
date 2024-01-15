@@ -3,51 +3,48 @@
 }
 
 .languageSelect {
-  appearance      : none;
-  cursor          : pointer;
-  height          : 2.4rem;
-  width           : 12rem;
-  border-radius   : 0.2rem;
-  padding-inline  : 2.4rem;
-  outline         : none;
+  appearance: none;
+  cursor: pointer;
+  height: 2.4rem;
+  width: 12rem;
+  border-radius: 0.2rem;
+  padding-inline: 2.4rem;
+  outline: none;
   background-color: transparent;
-  color           : var(--primary-color);
+  color: var(--primary-color);
 
   // TODO: Change to light version
   option {
-    color           : var(--primary-color);
+    color: var(--primary-color);
     background-color: var(--secondary-color);
-    font-size       : 1rem;
-   
+    font-size: 1rem;
   }
 }
 
-
 .languageIcon {
-  position   : absolute;
-  height     : 100%;
-  top        : 0;
-  font-size  : 0.9rem;
-  display    : flex;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  font-size: 0.9rem;
+  display: flex;
   align-items: center;
-  cursor     : pointer;
+  cursor: pointer;
 }
 
 .globe {
   position: absolute;
-  left    : 1rem;
+  left: 1rem;
 }
 
 .chevron {
   position: absolute;
-  left    : 10rem;
+  left: 10rem;
 }
 
-
 .green option {
-  background-color: #0F0;
+  background-color: #0f0;
 }
 
 .blue option {
-  background-color: #00F;
+  background-color: #00f;
 }

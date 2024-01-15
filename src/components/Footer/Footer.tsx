@@ -27,12 +27,18 @@ export const Footer = () => {
           </li>
         </ul>
         <ul>
-          <li><Link href="#">Home</Link></li>
-          <li><Link href="#">Experience</Link></li>
-          <li><Link href="#">Contact</Link></li>
+          <li>
+            <Link href="#">Home</Link>
+          </li>
+          <li>
+            <Link href="#">Experience</Link>
+          </li>
+          <li>
+            <Link href="#">Contact</Link>
+          </li>
         </ul>
         <p>Copyright © {new Date().getFullYear()} All Rights Reserved by jorgecalderon.dev</p>
-        <LanguagePicker />        
+        <LanguagePicker />
       </Container>
     </footer>
   )

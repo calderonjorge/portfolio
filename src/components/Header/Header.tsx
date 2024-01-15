@@ -6,9 +6,7 @@ export const Header = () => {
   const [hasCopied, setHasCopied] = useState(false)
 
   const handleCopyText = () => {
-    const button = document.querySelector(
-      'button#lets-connect'
-    ) as HTMLButtonElement
+    const button = document.querySelector('button#lets-connect') as HTMLButtonElement
 
     if (button) {
       const buttonText = button.innerText

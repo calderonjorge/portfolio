@@ -1,4 +1,3 @@
-
 export const Copy = () => {
   return (
     <svg

@@ -1,9 +1,8 @@
 interface Props {
-    className?:string
+  className?: string;
 }
- 
 
-export const CopyCheck = (props:Props) => {
+export const CopyCheck = (props: Props) => {
   return (
     <svg
       className={props.className}

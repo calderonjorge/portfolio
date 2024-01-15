@@ -1,4 +1,3 @@
-
 export const Instagram = () => {
   return (
     <svg

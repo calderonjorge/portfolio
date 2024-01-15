@@ -12,7 +12,7 @@ export interface Props {
   activities: string[];
 }
 
-export const TimelineItem: FC<Props> = (props) => {
+export const TimelineItem: FC<Props> = props => {
   return (
     <article
       className={styles['timeline-item']}
@@ -21,15 +21,16 @@ export const TimelineItem: FC<Props> = (props) => {
       // @ts-ignore
       style={{ '--bg-color-is': props.titleColor, '--text-color-is': props.dotTextColor }}
     >
-      <h3 style={{ color: props.titleColor }}>{props.title} – <Link target="_blank" rel="noreferrer" href={props.companyLink}>{props.company}</Link></h3>
+      <h3 style={{ color: props.titleColor }}>
+        {props.title} –{' '}
+        <Link target="_blank" rel="noreferrer" href={props.companyLink}>
+          {props.company}
+        </Link>
+      </h3>
       <ul>
-        {
-          props.activities.map((activity, i) => (
-            <li key={i}>
-              {activity}
-            </li>
-          ))
-        }
+        {props.activities.map((activity, i) => (
+          <li key={i}>{activity}</li>
+        ))}
       </ul>
     </article>
   )
