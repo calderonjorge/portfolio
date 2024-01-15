@@ -1,3 +1,5 @@
+import en from './en.json'
+
 export interface INestedMessages {
   [key: string]: string | INestedMessages;
 }
