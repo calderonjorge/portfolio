@@ -4,12 +4,12 @@ import styles from './LanguagePicker.module.scss'
 export const LanguagePicker = () => {
   return (
     <div className={styles.language}>
-      <span>hello worl jijij</span>
       <select
         className={styles.languageSelect}
         onChange={() => {
           console.error('changed')
         }}
+        defaultValue={'en'}
       >
         <option value="en" selected>
           English

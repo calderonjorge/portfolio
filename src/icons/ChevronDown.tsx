@@ -12,8 +12,6 @@ export const ChevronDown = ({ className }: Props) => {
       strokeWidth="1.5"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
