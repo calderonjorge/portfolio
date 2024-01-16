@@ -8,21 +8,20 @@
   margin: 100px auto 40px;
 
   h1 {
-    font-size: 11rem;
-    letter-spacing: -8px;
+    // font-size: 11rem;
+    letter-spacing: -5px;
     line-height: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
     --bg-size: 400%;
-    --color-one: rgba(222, 0, 75);
-    --color-two: rgba(191, 70, 255);
-    --color-three: rgba(0, 212, 255);
+    --color-one: rgba(0, 212, 255,0.8);
+  --color-two: rgba(191, 70, 255,0.8);
     font-size: clamp(3rem, 25vmin, 8rem);
     background: linear-gradient(
                   90deg,
                   var(--color-one),
                   var(--color-two),
-                  var(--color-three),
-                  var(--color-two),
+                  // var(--color-three),
+                  // var(--color-two),
                   var(--color-one)
                 ) 0 0 / var(--bg-size) 100%;
     color: transparent;
@@ -55,7 +54,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .title {
-    animation: move-bg 8s linear infinite;
+    animation: move-bg 16s linear infinite;
   }
   @keyframes move-bg {
     to {
