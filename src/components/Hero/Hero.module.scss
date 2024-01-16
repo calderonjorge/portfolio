@@ -8,7 +8,6 @@
   margin: 100px auto 40px;
 
   h1 {
-    // font-size: 11rem;
     letter-spacing: -5px;
     line-height: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -20,8 +19,6 @@
                   90deg,
                   var(--color-one),
                   var(--color-two),
-                  // var(--color-three),
-                  // var(--color-two),
                   var(--color-one)
                 ) 0 0 / var(--bg-size) 100%;
     color: transparent;
