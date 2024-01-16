@@ -8,7 +8,9 @@ interface Props {
 export const AwesomeLink: FC<PropsWithChildren<Props>> = ({ children, href }) => {
   return (
     <div className={styles.container}>
-      <a className={styles.link}>{children}</a>
+      <a className={styles.link} href={href}>
+        {children}
+      </a>
     </div>
   )
 }

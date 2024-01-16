@@ -1,8 +1,8 @@
 import { Link } from '@/components'
 import { Container, SocialIcon, LanguagePicker } from '@/components'
+import { useTranslate } from '@/hooks'
 import { LinkedIn, Instagram, Github } from '@/icons'
 import styles from './Footer.module.scss'
-import { useTranslate } from '@/hooks'
 
 export const Footer = () => {
   const { t } = useTranslate()

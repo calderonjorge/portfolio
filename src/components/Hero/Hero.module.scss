@@ -1,4 +1,7 @@
 .hero {
+  --bg-size: 400%;
+    --color-one: rgba(0, 212, 255,0.8);
+  --color-two: rgba(191, 70, 255,0.8);
   text-align: center;
   text-wrap: balance;
   max-width: 1280px;
@@ -11,9 +14,6 @@
     letter-spacing: -5px;
     line-height: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
-    --bg-size: 400%;
-    --color-one: rgba(0, 212, 255,0.8);
-  --color-two: rgba(191, 70, 255,0.8);
     font-size: clamp(3rem, 25vmin, 8rem);
     background: linear-gradient(
                   90deg,
@@ -25,6 +25,16 @@
     background-clip: text;
     -webkit-background-clip: text;
     animation: move-bg 8s infinite linear;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    padding: 10px;
+    // mix-blend-mode: difference;
+
   }
 }
 

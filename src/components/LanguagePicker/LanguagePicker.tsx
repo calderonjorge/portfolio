@@ -14,6 +14,7 @@ export const LanguagePicker = () => {
           // TODO: implement i18n with hash
           switchLocale(e.target.value as Locale)
         }}
+        title="Language selector"
         defaultValue={locale}
       >
         <option value="en">{t('app.locale_switcher.en')}</option>
