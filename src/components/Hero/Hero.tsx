@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslate } from '@/hooks'
 import styles from './Hero.module.scss'
 
@@ -6,7 +7,7 @@ export const Hero = () => {
   const { t } = useTranslate()
   return (
     <section className={styles.hero} id={t('hero.id')}>
-      <img src="/profile-2.png" alt="my profile" title="my profile" />
+      <Image src="/profile-2.png" alt="my profile" title="my profile" width={300} height={300} />
       <p className={styles.greeting}>{t('hero.greeting')}</p>
       <h1>
         {t('hero.exclamation')}
