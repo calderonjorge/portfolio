@@ -1,8 +1,8 @@
 .container{
   
   --bg-size: 400%;
-  --color-one: rgba(0, 212, 255, 0.8);
-  --color-two: rgba(191, 70, 255, 0.8);
+  --color-one: rgba(0, 212, 255, 0.55);
+  --color-two: rgba(191, 70, 255, 0.55);
   background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 /var(--bg-size) 100%;
   animation: move-bg 8s infinite linear;
   border-radius: 0.2rem;  
@@ -39,6 +39,7 @@
 @keyframes change-color-on-scroll {
   to {
     background-color: transparent;
+    color: var(--primary-color);
   }
 }
 
