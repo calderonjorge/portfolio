@@ -1,18 +1,18 @@
 .container{
   
   --bg-size: 400%;
-  --color-one: rgba(0, 212, 255, 0.55);
-  --color-two: rgba(191, 70, 255, 0.55);
+  --color-one: rgba(0, 212, 255, 0.7);
+  --color-two: rgba(191, 70, 255, 0.7);
   background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 /var(--bg-size) 100%;
   animation: move-bg 8s infinite linear;
-  border-radius: 0.2rem;  
+  border-radius: 0.5rem;
 }
 
 .link {
   text-transform: uppercase;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.2rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: scale 0.3s;
   display: flex;
@@ -39,7 +39,6 @@
 @keyframes change-color-on-scroll {
   to {
     background-color: transparent;
-    color: var(--primary-color);
   }
 }
 
