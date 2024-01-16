@@ -26,7 +26,7 @@
   z-index: 0;
   animation: change-color-on-scroll linear both;
   animation-timeline: scroll();
-  animation-range: 0 200px;
+  animation-range: 0 400px;
 }
 
 @keyframes move-bg {

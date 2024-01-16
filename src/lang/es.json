@@ -28,12 +28,17 @@
     }
   },
   "hero": {
-    "id": "inicio", 
-    "job_title":"Desarrollador web",
-    "current_job": "Creando increíbles interfaces de usuario en", 
+    "id": "home", 
+    "greeting":"¡Hola, soy Jorge!",
+    "exclamation":"¡",
+    "first_part_title":"Creando",
+    "second_part_title":" maravillas en internet, convirtiendo ideas en ",
+    "third_part_title":"magia",
+    "job_description":"Especializado en diseño web responsive y hábil en el desarrollo de sistemas de diseño.",
+    "current_job": "Desarrollador web ", 
+    "current_job_2":"en ",
     "current_company_name": "Globant", 
-    "current_company_href": "https://www.globant.com/es",
-    "current_date_job":"Oct 2021 - Actualidad"
+    "current_company_href": "https://www.globant.com/es"
   },
   "experience": {
     "id": "experiencia"

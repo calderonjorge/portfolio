@@ -6,29 +6,23 @@ export const Hero = () => {
   const { t } = useTranslate()
   return (
     <section className={styles.hero} id={t('hero.id')}>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          gap: '20px',
-        }}
-      >
-        <img src="/profile.png" alt="my profile" title="my profile" />
-        <img src="/profile-2.png" alt="my profile" title="my profile" />
-      </div>
-      <h1>{t('hero.job_title')}</h1>
-
-      <div className={styles.currentJob}>
-        <p>
-          {t('hero.current_job')}{' '}
-          <Link href={t('hero.current_company_href')} target="_blank" rel="noreferrer">
-            @{t('hero.current_company_name')}
-          </Link>
-        </p>
-        <p>{t('hero.current_date_job')}</p>
-      </div>
+      <img src="/profile-2.png" alt="my profile" title="my profile" />
+      <p className={styles.greeting}>{t('hero.greeting')}</p>
+      <h1>
+        {t('hero.exclamation')}
+        <span>{t('hero.first_part_title')}</span>
+        {t('hero.second_part_title')}
+        <span>{t('hero.third_part_title')}</span>! 🚀
+      </h1>
+      <p>
+        {t('hero.current_job')}
+        {t('hero.current_job_2')}
+        <Link href={t('hero.current_company_href')} target="_blank" rel="noreferrer">
+          @{t('hero.current_company_name')}
+        </Link>
+        .
+      </p>
+      <p>{t('hero.job_description')}</p>
     </section>
   )
 }

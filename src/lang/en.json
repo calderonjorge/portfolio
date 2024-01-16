@@ -29,11 +29,16 @@
   },
   "hero": {
     "id": "home", 
-    "job_title":"Web developer",
-    "current_job": "Creating amazing user interfaces at", 
+    "greeting":"Hi, I'm Jorge!",
+    "exclamation":" ",
+    "first_part_title":"Building",
+    "second_part_title":" online wonders, turning ideas into ",
+    "third_part_title":"magic",
+    "job_description":"Specializing in responsive web design and adept at developing comprehensive design systems.",
+    "current_job": "Web developer ", 
+    "current_job_2":"at ",
     "current_company_name": "Globant", 
-    "current_company_href": "https://www.globant.com/", 
-    "current_date_job":"Oct 2021 - Today"
+    "current_company_href": "https://www.globant.com/"
   },
   "experience": {
     "id": "experience"
