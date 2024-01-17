@@ -3,7 +3,8 @@
   font-size: 0.8rem;
   border-top: solid 1px var(--gray);
   background: rgba(0, 0, 0, 0.5);
-
+  text-align: center;
+  
   .container {
     display: flex;
     justify-content: center;
@@ -21,5 +22,7 @@
   ul {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 }
