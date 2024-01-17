@@ -3,9 +3,11 @@ import { Menu } from '@/icons'
 import { useTranslate } from '@/hooks'
 import styles from './Header.module.scss'
 import Image from 'next/image'
+import { useState } from 'react'
 
 export const Header = () => {
   const { t } = useTranslate()
+  const [menuOpen, setMenuOpen] = useState(true)
 
   return (
     <header className={styles.header}>
@@ -31,11 +33,41 @@ export const Header = () => {
           </AwesomeLink>
         </div>
         <div className={styles.menu}>
-          <button>
+          <button
+            onClick={() => {
+              setMenuOpen(!menuOpen)
+            }}
+          >
             <Menu />
           </button>
         </div>
       </Container>
+
+      {menuOpen && (
+        <ul className={styles.mobileLinks}>
+          <li
+            onClick={() => {
+              setMenuOpen(false)
+            }}
+          >
+            <Link href={t('header.links.home.href')}>{t('header.links.home.value')}</Link>
+          </li>
+          <li
+            onClick={() => {
+              setMenuOpen(false)
+            }}
+          >
+            <Link href={t('header.links.about.href')}>{t('header.links.about.value')}</Link>
+          </li>
+          <li
+            onClick={() => {
+              setMenuOpen(false)
+            }}
+          >
+            <Link href={t('header.links.experience.href')}>{t('header.links.experience.value')}</Link>
+          </li>
+        </ul>
+      )}
     </header>
   )
 }
