@@ -4,20 +4,15 @@
   --color-two: rgba(191, 70, 255, 0.8);
   text-align: center;
   text-wrap: balance;
-  max-width: 1280px;
-  width: 100%;
   flex-direction: column;
-
-  margin: 70px auto 20px;
-
+  margin: 5rem auto 1.25rem;
   @media (min-width: 992px) {
-    // border: solid 1px purple;
-    margin: 100px auto 40px;
+    margin: 6.25rem auto 2.5rem;
   }
 
   .greeting {
     font-size: 1.1rem;
-    margin: 1rem 0;
+    margin-top: 0.5rem;
 
     @media (min-width: 992px) {
       font-size: 2rem;

@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Container } from '@/components'
 import { useTranslate } from '@/hooks'
 import styles from './Hero.module.scss'
 
 export const Hero = () => {
   const { t } = useTranslate()
   return (
-    <section className={styles.hero} id={t('hero.id')}>
+    <Container className={styles.hero} id={t('hero.id')}>
       <Image src="/profile.png" alt="my profile" title="my profile" width={120} height={120} />
       <p className={styles.greeting}>{t('hero.greeting')}</p>
       <h1>
@@ -24,6 +25,6 @@ export const Hero = () => {
         .
       </p>
       <p>{t('hero.job_description')}</p>
-    </section>
+    </Container>
   )
 }
