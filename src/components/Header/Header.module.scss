@@ -9,7 +9,7 @@
   animation: blur linear both;
   animation-timeline: scroll();
   animation-range: 0 400px;
-  border-bottom: 0px var(--gray) solid;
+  
 }
 
 .navbar {
@@ -49,6 +49,7 @@
 
 .mobileLinks {
   display: block;
+  border-bottom: 1px var(--gray) solid;
 
   li {
 
