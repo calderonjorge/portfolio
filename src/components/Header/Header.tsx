@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 export const Header = () => {
   const { t } = useTranslate()
-  const [menuOpen, setMenuOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <header className={styles.header}>
