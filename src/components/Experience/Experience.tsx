@@ -1,6 +1,6 @@
 import { Container, Timeline, TimelineITemProps } from '@/components'
-import styles from './Experience.module.scss'
 import { useTranslate } from '@/hooks'
+import styles from './Experience.module.scss'
 
 export const Experience = () => {
   const { t } = useTranslate()
