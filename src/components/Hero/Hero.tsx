@@ -7,7 +7,7 @@ export const Hero = () => {
   const { t } = useTranslate()
   return (
     <section className={styles.hero} id={t('hero.id')}>
-      <Image src="/profile.png" alt="my profile" title="my profile" width={300} height={300} />
+      <Image src="/profile.png" alt="my profile" title="my profile" width={120} height={120} />
       <p className={styles.greeting}>{t('hero.greeting')}</p>
       <h1>
         {t('hero.exclamation')}
