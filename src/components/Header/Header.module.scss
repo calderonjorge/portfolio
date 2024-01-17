@@ -19,25 +19,30 @@
 }
 
 .logo {
-  font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary-color);
-  font-family: 'IBM Plex Sans', sans-serif;
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
+  font-family: 'IBM Plex Sans', sans-serif;  
+  
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 }
 
 .links {
-  display: flex;
+  display: none;
   gap: 1rem;
 
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     gap: 1rem;
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
   }
 }
 
@@ -46,6 +51,32 @@
   flex-grow: 1;
   flex-basis: 0;
   justify-content: flex-end;
+  align-content: center;
+  margin-right: 0.7rem;
+}
+
+.menu {
+  button {
+    height: 2.25rem;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+    svg {
+      color: var(--primary-color);
+      width: 22px;
+      height: 22px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.09);
+    }
+  }
 }
 
 @keyframes blur {

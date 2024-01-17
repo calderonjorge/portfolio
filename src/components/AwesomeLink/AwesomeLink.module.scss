@@ -11,7 +11,7 @@
 .link {
   text-transform: uppercase;
   border: none;
-  padding: 0.625rem 1.25rem;
+  padding: 8px 16px;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: scale 0.3s;
@@ -27,6 +27,10 @@
   animation: change-color-on-scroll linear both;
   animation-timeline: scroll();
   animation-range: 0 400px;
+
+  @media (min-width: 992px) {
+    padding: 0.625rem 1.25rem;
+  }
 }
 
 @keyframes move-bg {
