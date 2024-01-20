@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import { useRef } from 'react'
 import { Container } from '@/components'
-import { useTranslate } from '@/hooks'
+import { useTranslate, useClickOutside } from '@/hooks'
 import styles from './Hero.module.scss'
 
 export const Hero = () => {
   const { t } = useTranslate()
+
   return (
     <Container className={styles.hero} id={t('hero.id')}>
       <img src="/profile.png" alt="my profile" title="my profile" width={120} height={120} />

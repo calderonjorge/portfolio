@@ -28,7 +28,7 @@
     }
   },
   "hero": {
-    "id": "home", 
+    "id": "inicio", 
     "greeting":"¡Hola, soy Jorge!",
     "exclamation":"¡",
     "first_part_title":"Creando",

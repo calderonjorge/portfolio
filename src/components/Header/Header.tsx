@@ -1,16 +1,21 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 import { Container, Link, AwesomeLink } from '@/components'
 import { Menu } from '@/icons'
-import { useTranslate } from '@/hooks'
+import { useTranslate, useClickOutside } from '@/hooks'
 import styles from './Header.module.scss'
 
 export const Header = () => {
   const { t } = useTranslate()
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const clickRef = useRef(null) as any
+  useClickOutside(clickRef, () => {
+    setMenuOpen(false)
+  })
+
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={clickRef}>
       <Container component="nav" className={styles.navbar}>
         <div className={styles.logo}>
           {/* TODO: create a logo */}
