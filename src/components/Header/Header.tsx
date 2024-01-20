@@ -1,9 +1,9 @@
+import { useState } from 'react'
+import Image from 'next/image'
 import { Container, Link, AwesomeLink } from '@/components'
 import { Menu } from '@/icons'
 import { useTranslate } from '@/hooks'
 import styles from './Header.module.scss'
-import Image from 'next/image'
-import { useState } from 'react'
 
 export const Header = () => {
   const { t } = useTranslate()
