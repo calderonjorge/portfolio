@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import { useRef } from 'react'
 import { Container } from '@/components'
-import { useTranslate, useClickOutside } from '@/hooks'
+import { useTranslate } from '@/hooks'
 import styles from './Hero.module.scss'
 
 export const Hero = () => {

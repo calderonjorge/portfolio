@@ -21,8 +21,9 @@ export const useLocale = () => {
       if (locale === router.locale) {
         return
       }
-      const path = router.asPath
-      return router.push(path, path, { locale })
+      // const path = router.asPath
+      // console.log(path, locale)
+      return router.push('/', '/', { locale })
     },
     [router],
   )
