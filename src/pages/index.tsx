@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useTranslate } from '@/hooks'
 
-import { Header, Hero, Footer, Experience } from '@/components'
+import { Header, Hero, Footer, Experience, TextAnimation } from '@/components'
 
 export default function Home() {
   const { t } = useTranslate()
@@ -19,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Experience />
+        <TextAnimation />
       </main>
       <Footer />
     </>

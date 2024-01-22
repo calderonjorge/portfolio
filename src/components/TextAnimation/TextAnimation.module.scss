@@ -1,0 +1,25 @@
+.animation {
+  --bg-size  : 400%;
+  --color-one: rgba(0, 212, 255, 0.8);
+  --color-two: rgba(191, 70, 255, 0.8);
+
+  height         : 100vh;
+  display        : flex;
+  justify-content: center;
+  text-align     : center;
+  align-items    : center;
+
+  h2 {
+    background             : linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color                  : transparent;
+    background-clip        : text;
+    -webkit-background-clip: text;
+    animation              : move-bg 8s infinite linear;
+  }
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
