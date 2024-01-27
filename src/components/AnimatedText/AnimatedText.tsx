@@ -3,17 +3,15 @@ import styles from './AnimatedText.module.scss'
 
 interface Props {
   id?: string;
-  component?: 'div' | 'section' | 'nav';
   className?: string;
 }
 
-export const AnimatedText: FC<PropsWithChildren<Props>> = ({ component = 'div', children, ...props }) => {
+export const AnimatedText: FC<PropsWithChildren<Props>> = ({ children }) => {
   return (
     <div id="main">
       <section id="animated-text">
         <p>
-          <span>hola</span>
-          <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
+          <span>{children}</span>
         </p>
       </section>
     </div>
