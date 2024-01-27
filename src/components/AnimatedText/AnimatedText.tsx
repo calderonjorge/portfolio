@@ -8,12 +8,12 @@ interface Props {
 
 export const AnimatedText: FC<PropsWithChildren<Props>> = ({ children }) => {
   return (
-    <div id="main">
-      <section id="animated-text">
+    <section className={styles.section}>
+      <div className={styles.container}>
         <p>
           <span>{children}</span>
         </p>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
