@@ -11,7 +11,7 @@ export const AnimatedText: FC<PropsWithChildren<Props>> = ({ children }) => {
     <section className={styles.section}>
       <div className={styles.container}>
         <p>
-          <span>{children}</span>
+          <span id="span">Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
         </p>
       </div>
     </section>

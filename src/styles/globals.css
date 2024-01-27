@@ -100,6 +100,17 @@ ul {
   height: 200vh;
 }
 
+.container {
+  font-family  : 'IBM Plex Sans', sans-serif;
+  border: solid 1px red;
+  position: sticky;
+  top: 0;
+	height: 100vh;
+	/* width: 100vw; */
+  display: grid;
+  place-items: center;
+}
+
 .container p {
   max-width: 70vw;
   overflow: hidden;  
@@ -107,14 +118,13 @@ ul {
 	margin: 0;
 }
 
-p > span {
+#span {
 	outline-color: hsl(10 80% 50%);
 	outline-offset: 1ch;
 	font-size: clamp(3rem, 4vw + 1rem, 10rem);
   color: var(--color);
   text-decoration: none;
   background-image:
-		/* First one is the highlight */
 		linear-gradient(90deg, transparent calc(100% - 8ch), var(--accent) calc(100%  - 8ch)),
   	linear-gradient(90deg, var(--fill), var(--fill)),
     linear-gradient(90deg, var(--underline-color), var(--underline-color));
@@ -129,16 +139,6 @@ p > span {
   color: var(--finish-fill);
 }
 
-.container {
-  font-family  : 'IBM Plex Sans', sans-serif;
-  border: solid 1px red;
-  position: sticky;
-  top: 0;
-	height: 100vh;
-	/* width: 100vw; */
-  display: grid;
-  place-items: center;
-}
 
 
 @supports (animation-timeline: scroll()) {
@@ -147,7 +147,7 @@ p > span {
       view-timeline-name: --section;
     }
     
-    p > span {
+    #span {
       background-position-x:
         calc(var(--underline-block-width) * -1),
         calc(var(--underline-block-width) * -1),

@@ -21,12 +21,13 @@ export default function Home() {
         <Hero />
         <Experience />
         <section className="section">
-          <section className="container">
+          <div className="container">
             <p>
-              <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
+              <span id="span">Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
             </p>
-          </section>
+          </div>
         </section>
+        <AnimatedText />
       </main>
       <Footer />
     </>
