@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren } from 'react'
+import { Container } from '@/components'
 import styles from './AnimatedText.module.scss'
 
 interface Props {
@@ -8,12 +9,12 @@ interface Props {
 
 export const AnimatedText: FC<PropsWithChildren<Props>> = ({ children }) => {
   return (
-    <section className={styles.section}>
+    <Container className={styles.section}>
       <div className={styles.container}>
         <p>
-          <span id="span">Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
+          <span>{children}</span>
         </p>
       </div>
-    </section>
+    </Container>
   )
 }

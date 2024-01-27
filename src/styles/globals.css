@@ -41,8 +41,8 @@
     --underline-color: hsl(0 0% 50% / 0.15);
     --underline-color-hover: hsl(180 100% 50% / 1);
     --underline-transition: 5s;
-    --finish-fill: hsl(0 0% 100%);
-    --accent: hsl(0 0% 100%);
+    --finish-fill: #cacaca;
+    --accent: #cacaca;
     --fill: hsl(0 0% 50%);
   }
 }
