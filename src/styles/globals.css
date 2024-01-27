@@ -95,16 +95,6 @@ ul {
 
 
 /* ------------------------------------------ */
-@font-face {
-  font-family: "Geist Sans";
-  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
-}
-
-body {
-  /* font-family: "Geist Sans", sans-serif */
-  /* font-weight: 120; */
-}
-
 
 section#animated-text p {
   max-width: 70vw;

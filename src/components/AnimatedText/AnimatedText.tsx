@@ -9,19 +9,12 @@ interface Props {
 
 export const AnimatedText: FC<PropsWithChildren<Props>> = ({ component = 'div', children, ...props }) => {
   return (
-    <div className={styles.body}>
-      <main>
-        <section>
-          <div className="section__content">
-            <p data-splitting="">
-              <span>I love making cool things</span> <br />
-              <span>and solving complex</span>
-              <span>&nbsp;problems for people.</span>
-              <span>— like you</span>
-            </p>
-          </div>
-        </section>
-      </main>
+    <div id="main">
+      <section id="animated-text">
+        <p>
+          <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
+        </p>
+      </section>
     </div>
   )
 }

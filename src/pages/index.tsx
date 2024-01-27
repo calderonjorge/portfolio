@@ -15,12 +15,11 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Header /> */}
 
-      {/* <Experience /> */}
-      {/* <AnimatedText/> */}
       <main>
+        <Header />
         <Hero />
+        <Experience />
         <div id="main">
           <section id="animated-text">
             <p>
@@ -28,6 +27,7 @@ export default function Home() {
             </p>
           </section>
         </div>
+        <AnimatedText />
       </main>
       <Footer />
     </>
