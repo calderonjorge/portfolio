@@ -8,6 +8,7 @@
     }
   },
   "header": {
+    "mail":"hi@jorgecalderon.dev",
     "links": {
       "home": {
         "href": "#home",

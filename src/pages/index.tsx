@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useTranslate } from '@/hooks'
 
-import { Header, Hero, Footer, Experience, TextAnimation } from '@/components'
+import { Header, Hero, Footer, Experience, AnimatedText, Apple } from '@/components'
 
 export default function Home() {
   const { t } = useTranslate()
@@ -15,11 +15,19 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      {/* <Header /> */}
+
+      {/* <Experience /> */}
+      {/* <AnimatedText/> */}
       <main>
         <Hero />
-        <Experience />
-        <TextAnimation />
+        <div id="main">
+          <section id="animated-text">
+            <p>
+              <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
+            </p>
+          </section>
+        </div>
       </main>
       <Footer />
     </>

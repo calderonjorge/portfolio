@@ -18,8 +18,7 @@ export const Header = () => {
     <header className={styles.header} ref={clickRef}>
       <Container component="nav" className={styles.navbar}>
         <div className={styles.logo}>
-          {/* TODO: create a logo */}
-          <Image src={'https://flowbite.com/docs/images/logo.svg'} height={32} width={32} alt="" />
+          <a href={`mailto:${t('header.mail')}`}>{t('header.mail')}</a>
         </div>
         <ul className={styles.links}>
           <li>
