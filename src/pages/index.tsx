@@ -20,13 +20,6 @@ export default function Home() {
         <Header />
         <Hero />
         <Experience />
-        <div id="main">
-          <section id="animated-text">
-            <p>
-              <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
-            </p>
-          </section>
-        </div>
         <AnimatedText />
       </main>
       <Footer />

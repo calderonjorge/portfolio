@@ -12,6 +12,7 @@ export const AnimatedText: FC<PropsWithChildren<Props>> = ({ component = 'div', 
     <div id="main">
       <section id="animated-text">
         <p>
+          <span>hola</span>
           <span>Responsive Animated Text Reveals with CSS Scroll-Driven Animations.</span>
         </p>
       </section>
