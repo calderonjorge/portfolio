@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useTranslate } from '@/hooks'
 
-import { Header, Hero, Footer, Experience, TextAnimation } from '@/components'
+import { Header, Hero, Footer, Experience, AnimatedText } from '@/components'
 
 export default function Home() {
   const { t } = useTranslate()
@@ -15,11 +15,12 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+
       <main>
+        <Header />
         <Hero />
         <Experience />
-        <TextAnimation />
+        <AnimatedText>{t('animated_text')}</AnimatedText>
       </main>
       <Footer />
     </>

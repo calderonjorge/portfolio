@@ -8,7 +8,7 @@ export const Hero = () => {
 
   return (
     <Container className={styles.hero} id={t('hero.id')}>
-      <img src="/profile.png" alt="my profile" title="my profile" width={120} height={120} />
+      <img src="/profile.png" alt="my profile" title="mi foto" width={120} height={120} />
       <p className={styles.greeting}>{t('hero.greeting')}</p>
       <h1>
         {t('hero.exclamation')}

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&family=Work+Sans:wght@200;300;400;500&display=swap');
-
+@font-face {
+  font-family: "Geist Sans";
+  src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+}
 /*
   Light
   https://huemint.com/website-1/#palette=e3e4da-b7b99e-37342e 
@@ -29,6 +32,16 @@
 
     /* UTILS */
     --gray: #2e2e2e;
+
+
+    /* --bg: hsl(0 0% 2%); */
+    /* --color: hsl(0 0% 100% / 0.1); */
+    --underline-width: 1lh;
+    --underline-block-width: 200vmax;
+    --underline-color: hsl(0 0% 50% / 0.15);
+    --finish-fill: var(--primary-color);
+    --accent: var(--primary-color);
+    --fill: hsl(0 0% 50%);
   }
 }
 
