@@ -5,7 +5,7 @@
 .container {
   font-family  : 'IBM Plex Sans', sans-serif;
   // border: solid 1px red;
-  text-wrap: balance;
+  text-wrap: pretty;
   position: sticky;
   top: 0;
 	height: 100vh;
@@ -14,7 +14,6 @@
 
   p {
     overflow: hidden;  
-    padding: 5ch;
     margin: 0;
 
     @media (min-width: 992px) {
@@ -23,7 +22,9 @@
   }
 
   span {
-    font-size: clamp(2.6rem, 2vw + 1rem, 5rem);
+    outline-color: hsl(10 80% 50%);
+    outline-offset: 1ch;
+    font-size: 2rem;
     color: var(--color);
     text-decoration: none;
     background-image:
@@ -39,11 +40,12 @@
     background-position-y: 100%;
     background-clip: text;
     color: var(--finish-fill);
+
+    @media (min-width: 992px) {
+      font-size: clamp(2rem, 25vmin, 4rem);
+    }
   }
 
-  @media (min-width: 992px) {
-    font-size: clamp(3rem, 2vw + 1rem, 10rem);
-  }
 }
 
 
@@ -57,8 +59,7 @@
       span {
         background-position-x:
           calc(var(--underline-block-width) * -1),
-          calc(var(--underline-block-width) * -1),
-          0;
+          calc(var(--underline-block-width) * -1),0;
         color: transparent;
         animation-name: fill-up, color-in;
         animation-fill-mode: both;
