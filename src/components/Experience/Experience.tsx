@@ -20,8 +20,7 @@ export const Experience = () => {
             proactive technical support to all developers in the front end and
             back end teams.`,
         `• Defined tasks to be completed taking into account delivery times
-            and complexity.
-            `,
+            and complexity.`,
       ],
     },
     {
@@ -39,8 +38,7 @@ export const Experience = () => {
         `• Participated in the design and fulfillment of functional
             requirements.`,
         `• Used geospatial technology with the Google Maps API (geolocation
-            and visualization of coordinates).
-          `,
+            and visualization of coordinates).`,
       ],
     },
     {
