@@ -6,7 +6,7 @@ const fs = require('fs')
 const directorioActual = './src/db'
 
 // Listar los archivos en el directorio actual
-fs.readdirSync(directorioActual).forEach(archivo => {
+fs.readdirSync(directorioActual).forEach((archivo: string) => {
   console.error(archivo)
 })
 
