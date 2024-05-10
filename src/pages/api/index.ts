@@ -32,9 +32,6 @@ export default function handler(_: NextApiRequest, res: NextApiResponse<Data>) {
   const stmt = db.prepare(query)
   const result = stmt.get(loanId)
 
-  // Cerrar la conexión con la base de datos
-  db.close()
-
   // Imprimir el resultado de la consulta
 
   res.status(200).json({ result })
